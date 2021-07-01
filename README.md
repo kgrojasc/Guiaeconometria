@@ -6,6 +6,7 @@ Esta es una guía practica del curso de Econometría I de la Universidad del Nor
 
 ## Sesión I
 
-1. Introducción 
+1. Introducción [Guía 1]([Sesión 1](https://raw.githack.com/keynes37/Guiaeconometria/blob/main/01-Intro.htm)
+) 
 
 
