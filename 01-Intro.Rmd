@@ -33,21 +33,22 @@ Muchos de los comandos y códigos aquí utilizados fueron tomados del sitio web 
 
 ## Primeros pasos
 
-Lo primero es ir a la pagina de <https://www.r-project.org> e ir a la pestaña de **CRAN** y
+Lo primero es ir a la pagina de <https://www.r-project.org> e ir a la pestaña de **CRAN** y descargar la versión de acuerdo al sistema **operativo** que usted tenga, llamese Linux, Windows o IOS.
 
 ![](images/insta1.gif)
 
-Despues de haber instalado el programa, urge ir al link de [R Studio](https://rstudio.com/products/rstudio/download/) que es un potente aliado^[Para mayor información consulte la pagina web o enlace de **R Studio**.] en el entorno de ejecución del programa **R**, se le denomina IDE^[Por sus siglas en ingles significa _Integrated Drive Electronics_, no es mas que un entorno de desarrollo interactivo que facilita interactuar mejor y de manera mas "amigable" con todos los asuntos de los lenguajes de programación].
+Despues de haber instalado el programa, urge ir al link de [R Studio](https://rstudio.com/products/rstudio/download/) que es un potente aliado^[Para mayor información consulte la pagina web o enlace de **R Studio**.] en el entorno de ejecución del programa **R**, se le denomina IDE Por sus siglas en ingles significa _Integrated Drive Electronics_, no es mas que un entorno de desarrollo interactivo que facilita interactuar mejor y de manera mas "amigable" con todos los asuntos de los lenguajes de programación.
 
 ![](images/insta2.gif)
 
-Luego de eso ya podrá interactuar mejor con **R** y visualmente todo será mejor.
+Debe ir por lo pronto a la sección **free**, esperar el tiempo de acuerdo a la _velocidad de conexión_ y luego ejecutarlo. Ya después de eso podrá interactuar mejor con **R** y visualmente todo será mejor para el trabajo.
 
 ## Script o Bitacoras
 
-Siempre es bueno crear unas notas de codigo. Lo puede hacer en formato _texto_ o _txt_ del block de notas de su **sistema operativo** o tambien directamente desde **R studio** de esta manera:
+Siempre es bueno crear unas notas de código. Es una especie de cuaderno que le permite tener apuntes o escritos para saber que va haciendo linea a linea, incluso le sirve como un historial de desarrollo, de todas maneras **R** tiene su propio, pero es _altamente_ recomendable que usted lo maneje de esta forma. Lo puede hacer en formato _texto_ o _txt_ del block de notas en su **sistema operativo** o también directamente desde el programa de **R studio** solo presionando las teclas `ctrl+shift+N` o de esta manera en el menú principal:
 
 ![](images/script1.gif)
+
 Note que **R Studio** trabaja con 3 ventanas principales, estas son la de _consola_, _Environment_ y _File_, todas tienen sus respectivas pestañas que le serán funcionales a la hora de hacer sus proyectos.
 
 ## Primeros calculos
@@ -79,6 +80,41 @@ Para la parte de asignación de valores a una variable (X) -puede darle el nombr
   log(a,b) # Logaritmo con base al valor b correspondiente,
   exp(a) # Valor Exponencial de a
   factorial(a) # Factor de a
+```
+
+En economía y en muchas ciencias sociales se hace uso extensivo de las **matemáticas** y de la **estadística**. Muchas veces será incluso necesario calcular o realizar algunas transformaciones en las variables para poder tener unas métricas mas informativas como son los _logaritmos_, _valores absolutos_, valores de forma _exponencial_ o de notación científica, entre otros. Algunos comandos que se pueden usar en **R** para eso son:
+
+| Operación     | Resultado     |
+| ------------- | ------------- |
+| Valor absoluto| abs()         |
+| Logaritmo     | log()         |
+| Logaritmo base| log(,)        |
+| Exponencial   | exp()         |
+| Factorial     | factorial()   |
+| Raíz cuadrada | sqrt()        |
+
+El *valor absoluto* de un número como por ejemplo puede ser simplemente:
+
+```{r echo=TRUE}
+  abs(-3) # Es el valor absoluto de (-3)
+```
+Sin embargo, en una operación conjunta, si se posee una lista de elementos o un **vector** de elementos, es mucho mas simple implementarlo de tal forma que:
+
+```{r echo=TRUE}
+  x<-c(-5,-19,3,11,-16,18,21,-31,-33) # Lista de valores
+  abs(x)
+```
+De igual forma, funciona con un *logaritmo* o también una operación que involucre una de forma de notación científica o *exponencial*, esto puede notarse así:
+
+```{r echo=TRUE}
+  y<-c(15,21,23,29,16,28,32,45,33) # Lista de valores para vector Y
+  log(y) #Se calcula el logaritmo de cada uno de los elementos
+```
+Observe que el **Programa** calcula el logaritmo natural de cada uno de los elementos del vector (y). Para la forma *exponencial*, es de uso de la notación del logaritmo base e y que muchos conocen como la expresión de **Euler**, e.g: $e^{x}$, recuerde ademas que si este lo usamos de tal manera que $Y=ln(e^{x})=x$. Un ejemplo de aplicación es
+
+```{r echo=TRUE}
+  x<-150 
+  exp(x) # En R exp hace referencia a la formula de (e)
 ```
 
 Teniendo la asignación de valores a un objeto en **R**, podemos simplificar el uso o calculo de forma considerable.
