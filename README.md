@@ -13,7 +13,7 @@ Esta es una guía practica del curso de Econometría I de la Universidad del Nor
 
 ### Diapositivas de la clase
 
-- Introducción 
+- Introducción [Intro clase](https://raw.githack.com/keynes37/Guiaeconometria/main/Reviews%20class/Clase%2001%20intro/Clase-1-Econ.html)
 
 
 
