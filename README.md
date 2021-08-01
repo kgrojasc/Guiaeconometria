@@ -1,8 +1,8 @@
 # Guía de Trabajo de Econometría I
-Esta es la guía de trabajo de clase del curso de **Econometría I** de la Universidad del Norte de la ciudad de Barranquilla.
+Esta es la guía de trabajo de clase del curso de **Econometría I** de la Universidad del Norte ubicada en la ciudad de Barranquilla.
 
 ### Resumen
-Esta es una guía practica del curso de Econometría I de la Universidad del Norte. Constituye un par de prácticos o ejercicios guiados para los comandos aprendidos durante la clase o sesión **asincrónica**, la idea es que el estudiante practique y ponga en forma los conocimientos adquiridos. 
+Esta pagina se constituye como un conjunto de elementos educativos para facilitar la comprensión de la teoría econometrica aplicada y estimular la parte práctica de los estudiantes con el software estadistico de **R**.
 
 ## Clase en R
 
