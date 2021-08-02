@@ -15,5 +15,5 @@ Esta pagina se constituye como un conjunto de elementos educativos para facilita
 
 - Introducción [Intro clase](https://raw.githack.com/keynes37/Guiaeconometria/main/Reviews%20class/Clase%2001%20intro/Clase-1-Econ.html)
 
-
+- Generalidades [Otros y datos](https://raw.githack.com/keynes37/Guiaeconometria/main/Reviews%20class/Clase%2002%20EDA/02-class.html)
 
