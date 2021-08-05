@@ -23,6 +23,19 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Consecuente a lo que venimos haciendo en el curso. Esta parte contiene lo referente a la __importación de datos__ en distintos formatos y las primeras medidas de estadistica conocidas como de __tendencia central__ que se usan para el análisis de datos, al igual que el tema de la distribución de una variable.
 
+## Markdown 
+
+Un compilador potente que permite juntar códigos de **R**, ecuaciones de **LaTeX** y textos para obtener documentos **científicos** ya sea en formato de _html_, _pdf_ y/o _word_. Se puede desplegar desde el menu de **R Studio**. Uuna guía completa de él lo puede hallar en este [enlace](https://bookdown.org/yihui/rmarkdown/) y su creador es 
+Yihui Xie.
+
+![](images/imprmark.gif)
+
+La clave es ir instalando algunos paquetes adicionales al paquete `Knit` e ir trabajando con las plantillas que involucra el programa.
+
+## Chunks
+
+Los `Chunk` son cuadros para insertar todos los códigos de **R** y el programa los ejecute directamente. Existes opciones de evaluación de celdas y también para gráficar. 
+
 # Importación
 
 Una de las cosas mas requeridas dentro del trabajo de **R** hace referencia a la importación de datos que no son propiamente de el. Aquellos datos o bases regularmente vienen en formatos de xml, csv, dta, asll, etc. Por ende, se hace necesario la implementación de comandos o de la ayuda directa del programa. Los _paquetes_ declarados a continuación permiten realizar esto:
@@ -101,7 +114,7 @@ var(Pruebadatos$Consumo)
 summary(Pruebadatos$Consumo)
 ```
 
-Que son los cálculos por variable de las primeras medidas de estadística descriptiva. Para el calculo del tercer y cuarto momento hay que hallar y tener en cuenta la instalación del paquete de `moments`
+Que son los cálculos por variable de las primeras medidas de estadística descriptiva. La **interpretación** de cada uno de ellos es vital en el _análisis de datos_. Para el calculo del tercer y cuarto momento hay que hallar y tener en cuenta la instalación del paquete de `moments`
 
 ```{r mom}
 #Usar paquete # Momentos de la distribución
@@ -113,6 +126,16 @@ skewness(Pruebadatos$Consumo)
 #Curtosis
 kurtosis(Pruebadatos$Consumo)
 ```
+
+En este caso la **asimetría** nos dice que tan sesgada hacia un lado esta la distribución de los datos, la recomendación de _asimetría_ es que esta sea cero (0), o se encuentre cerca de ese valor y la **Kurtosis** el grado de punta que tiene la distribución, se puede de acuerdo al valor obtenido clasificar como:
+
+$$
+\begin{aligned}
+\text{Mesocurtica}: \; & K = 3  \\
+\text{Leptocurtica}: \; & K > 3 \\
+\text{Platicurtica}: \; & K < 3
+\end{aligned}
+$$
 
 ### Requerimiento
 
